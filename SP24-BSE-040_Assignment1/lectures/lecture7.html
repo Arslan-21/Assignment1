@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lecture 7: Responsive Web Design</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="top"><a href="../index.html">Web Technologies</a><span>Lecture 7 of 8</span></header>
+<div class="wrap">
+  <article class="card">
+    <h1>Responsive Web Design</h1>
+    <p class="sub">Make one page work on phones, tablets and desktops.</p>
+    <h3>Summary</h3>
+    <p>Explains the viewport meta tag, fluid widths, flexible images and media queries, and why designing mobile first keeps CSS simple.</p>
+    <h3>Topics covered</h3>
+    <ul class="topics">
+<li>Foundations<ul><li>Viewport meta tag</li><li>Fluid layouts</li></ul></li>
+<li>Media Queries<ul><li>Breakpoints</li><li>min-width and max-width</li></ul></li>
+<li>Flexible Media<ul><li>max-width: 100% images</li><li>Responsive units</li></ul></li>
+    </ul>
+    <h3>Example code</h3>
+    <pre>@media (max-width: 600px) {
+  .menu { flex-direction: column; }
+}</pre>
+    <h3>Output</h3>
+    <div class="out">On screens 600px wide or less, the menu stacks vertically.</div>
+<h3>Practice pages</h3>
+<p class="extra">
+  <a href="../responsive-form.html">Responsive Form</a> &middot;
+  <a href="../bootstrap-page.html">My First Bootstrap Page</a>
+</p>
+  </article>
+  <nav class="nav"><a href="../index.html">Home</a><a href="lecture6.html">Previous Lecture</a><a href="lecture8.html">Next Lecture</a></nav>
+</div>
+</body>
+</html>

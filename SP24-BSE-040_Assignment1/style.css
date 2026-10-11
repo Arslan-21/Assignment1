@@ -1,0 +1,48 @@
+:root{--teal:#0f4c5c;--amber:#e8a33d;--ink:#16222b;--bg:#eef2f4;--card:#fff;--muted:#5b6b75}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Verdana,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+a{color:var(--teal)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif}
+
+/* Home page */
+.home{display:flex;min-height:100vh}
+.side{width:300px;background:var(--teal);color:#d7e6ea;padding:48px 28px;border-right:5px solid var(--amber);
+  display:flex;flex-direction:column;justify-content:center}
+.side small{font-size:.85rem}
+.side h1{color:#fff;font-size:2.2rem;margin:.3rem 0 1rem;line-height:1.1}
+.who{border-left:3px solid var(--amber);padding-left:10px;margin:14px 0}
+.who b{display:block;color:#fff}
+.main{flex:1;padding:60px 48px}
+.main h2{margin-top:0}
+table.index{width:100%;max-width:640px;border-collapse:collapse;background:var(--card);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+table.index th{background:var(--ink);color:#fff;text-align:left;padding:10px 12px;font-size:.85rem}
+table.index td{padding:10px 12px;border-bottom:1px solid #e3e8eb;font-size:.9rem}
+table.index td:first-child{font-weight:700;color:var(--teal)}
+.start{display:block;max-width:640px;text-align:center;margin-top:18px;font-weight:700;text-decoration:none}
+
+/* Lecture pages */
+.top{background:var(--teal);color:#fff;display:flex;justify-content:space-between;padding:12px 24px;border-bottom:3px solid var(--amber)}
+.top a{color:#fff;font-family:Georgia,serif;font-weight:700;text-decoration:none}
+.wrap{max-width:720px;margin:36px auto;padding:0 16px}
+.card{background:var(--card);border-top:4px solid var(--teal);padding:28px 26px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.card h1{color:var(--teal);margin:0;font-size:1.7rem}
+.sub{color:var(--muted);font-style:italic;font-size:.85rem;margin:2px 0 18px}
+.card h3{font-size:.95rem;border-bottom:1px solid #d5dde1;padding-bottom:3px;margin:22px 0 8px}
+ul.topics{list-style:none;padding-left:12px}
+ul.topics>li{margin:6px 0;font-weight:700;font-size:.9rem}
+ul.topics>li::before{content:"\2022 ";}
+ul.topics ul{list-style:circle;font-weight:400;margin:2px 0 6px}
+pre{background:var(--ink);color:#e6f0f3;padding:12px 14px;border-left:4px solid var(--amber);overflow-x:auto;font-size:.8rem;margin:0}
+.out{border:1px dashed var(--teal);background:#f6fafb;padding:14px;font-size:.9rem}
+.out h4{margin:0 0 6px;font-family:Georgia,serif}
+.box{display:inline-block;width:32px;height:32px;line-height:32px;text-align:center;background:var(--teal);color:#fff;border-radius:3px}
+.nav{text-align:center;margin:18px 0 40px;font-weight:700;font-size:.85rem}
+.nav a{text-decoration:none;padding:0 8px}
+.nav a+a{border-left:1px solid #c5d0d5}
+.extra{font-size:.9rem}
+
+@media (max-width:700px){
+  .home{flex-direction:column}
+  .side{width:100%;padding:28px 20px;border-right:0;border-bottom:5px solid var(--amber)}
+  .main{padding:28px 16px}
+}

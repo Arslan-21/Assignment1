@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lecture 5: CSS Selectors</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="top"><a href="../index.html">Web Technologies</a><span>Lecture 5 of 8</span></header>
+<div class="wrap">
+  <article class="card">
+    <h1>CSS Selectors</h1>
+    <p class="sub">Target exactly the elements you want to style.</p>
+    <h3>Summary</h3>
+    <p>Compares element, class and ID selectors, then combinators, attribute selectors and pseudo-classes, with notes on specificity.</p>
+    <h3>Topics covered</h3>
+    <ul class="topics">
+<li>Basic Selectors<ul><li>Element</li><li>Class</li><li>ID</li><li>Universal</li></ul></li>
+<li>Combinators<ul><li>Descendant</li><li>Child</li><li>Adjacent sibling</li></ul></li>
+<li>Pseudo Selectors<ul><li>:hover and :focus</li><li>:nth-child</li><li>::before and ::after</li></ul></li>
+    </ul>
+    <h3>Example code</h3>
+    <pre>.note { border-left: 4px solid #e8a33d; padding-left: 8px; }
+
+&lt;p class=&quot;note&quot;&gt;Styled with a class selector&lt;/p&gt;</pre>
+    <h3>Output</h3>
+    <div class="out"><p style="border-left:4px solid #e8a33d;padding-left:8px;margin:0">Styled with a class selector</p></div>
+  </article>
+  <nav class="nav"><a href="../index.html">Home</a><a href="lecture4.html">Previous Lecture</a><a href="lecture6.html">Next Lecture</a></nav>
+</div>
+</body>
+</html>

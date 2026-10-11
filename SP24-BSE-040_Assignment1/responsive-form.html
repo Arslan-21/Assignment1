@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Form</title>
+<style>
+  *{box-sizing:border-box}
+  body{font-family:Georgia,serif;margin:0;padding:16px}
+  .container{border-radius:5px;background:#f2f2f2;padding:20px;max-width:900px;margin:auto}
+  h2{margin-top:0}
+  .row{display:flex;margin-bottom:10px}
+  .col-25{width:25%;padding-top:8px}
+  .col-75{width:75%}
+  input[type=text],select,textarea{width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;font-family:inherit}
+  textarea{height:160px;resize:vertical}
+  .submit{text-align:right;margin-top:10px}
+  input[type=submit]{background:#04aa6d;color:#fff;padding:8px 18px;border:0;border-radius:4px;cursor:pointer}
+  input[type=submit]:hover{background:#45a049}
+  /* Responsive: stack on small screens */
+  @media (max-width:600px){
+    .row{flex-direction:column}
+    .col-25,.col-75{width:100%;padding-top:0}
+    .submit{text-align:center}
+    input[type=submit]{width:100%}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Responsive Form</h2>
+  <form action="#" onsubmit="alert('Form submitted'); return false;">
+    <div class="row"><div class="col-25"><label for="fname">First Name</label></div>
+      <div class="col-75"><input type="text" id="fname" name="firstname" placeholder="Your first name" required></div></div>
+    <div class="row"><div class="col-25"><label for="lname">Last Name</label></div>
+      <div class="col-75"><input type="text" id="lname" name="lastname" placeholder="Your last name" required></div></div>
+    <div class="row"><div class="col-25"><label for="country">Country</label></div>
+      <div class="col-75"><select id="country" name="country">
+        <option>Pakistan</option><option>India</option><option>Bangladesh</option><option>Other</option></select></div></div>
+    <div class="row"><div class="col-25"><label for="subject">Subject</label></div>
+      <div class="col-75"><textarea id="subject" name="subject" placeholder="Write something..."></textarea></div></div>
+    <div class="submit"><input type="submit" value="Submit"></div>
+  </form>
+  <p><a href="index.html">Back to Home</a></p>
+</div>
+</body>
+</html>
